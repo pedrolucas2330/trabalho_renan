@@ -2,85 +2,14 @@
     <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <header class="logo"></header>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chaves</title>
-  <style>
-   
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f4f4f4;
-    }
-
-    nav {
-      background-color: #1a1a1a;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-    }
-
-    .logo {
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: #00bcd4;
-    }
-
-    .menu-toggle {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .menu-toggle div {
-      width: 25px;
-      height: 3px;
-      background: white;
-      margin: 4px 0;
-      transition: 0.3s;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #1a1a1a;
-        width: 100%;
-        text-align: center;
-      }
-
-      .nav-links.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: flex;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"
 </head>
 <body>
+
   <nav>
     <div class="logo">Chaves</div>
     <div class="menu-toggle" onclick="toggleMenu()">
@@ -89,10 +18,10 @@
       <div></div>
     </div>
     <div class="nav-links" id="navLinks">
-      <a href="#">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
+      <a href="#">Seu madruga</a>
+      <a href="#">Chiquinha</a>
+      <a href="#">Kiko</a>
+      <a href="#">Seu barriga</a>
     </div>
   </nav>
 
@@ -100,7 +29,9 @@
     function toggleMenu() {
       const nav = document.getElementById('navLinks');
       nav.classList.toggle('active');
+  
     }
   </script>
+ 
 </body>
 </html>
