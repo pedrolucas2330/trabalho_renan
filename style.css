@@ -7,7 +7,7 @@ background-color: black;
 color: white;
 }
 .logo {
-  background-image: url("img/logo chaves.jpg");
+  background-image: url();
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left center; 
@@ -17,4 +17,30 @@ color: white;
 nav {
   background-color: #033b03;
   overflow: hidden;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 20px;
+}
+img {
+    align-items: start;
+
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #104d22;
+    padding: 0px;
+ 
+}.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
 }
