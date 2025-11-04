@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Madruga</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seu Madruga</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Esse é o Seu Madruga</h1>
+
+  <nav>
+    <div class="logo">
+      <img alt="Logo do Chaves" width="300" height="100" src="logo-chaves.png.jpg">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Chaves</a>
+      <a href="chiquinha.html">Chiquinha</a>
+      <a href="kiko.html">Kiko</a>
+      <a href="seuBarriga.html">Seu Barriga</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Seu Madruga (Don Ramón) — Um dos personagens mais queridos de “Chaves”</h1>
+
+    <img alt="Seu Madruga" width="300" height="300" src="seu-madruga.jpeg">
+
+    <p>
+      Interpretado por Ramón Valdés(No desenho original), Seu Madruga é o vizinho preguiçoso, porém carismático, da vila.
+      Ele é conhecido por estar sempre fugindo do aluguel cobrado pelo Seu Barriga e por suas brigas hilárias com Dona Florinda.
+    </p>
+
+    <p>
+      Apesar de parecer rabugento, Seu Madruga tem um coração enorme e um carinho especial por sua filha, Chiquinha.
+    </p>
+
+    <h2>Frases marcantes do Seu Madruga:</h2>
+    <ul>
+      <li>“A vingança nunca é plena, mata a alma e a envenena.”</li>
+      <li>“Só não te dou outra porque...”</li>
+      <li>“É que me escapuliu!”</li>
+    </ul>
+
+    <button onclick="window.location.href='index.html'">Voltar para o site do Chaves</button>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>

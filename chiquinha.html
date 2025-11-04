@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiquinha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <img alt="Logo do Chaves" width="300" height="100" src="logo-chaves.png.jpg">
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Chaves</a>
+      <a href="seu-madruga.html">Seu Madruga</a>
+      <a href="kiko.html">Kiko</a>
+      <a href="seu-barriga.html">Seu Barriga</a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Chiquinha — A esperta e travessa da vila</h1>
+
+    <img alt="Chiquinha" width="300" height="300" src="chiquinha.png">
+
+    <p>
+      **Chiquinha**, interpretada por **María Antonieta de las Nieves**, é a filha do Seu Madruga e uma das personagens mais queridas do seriado <strong>Chaves</strong>.
+      Inteligente, travessa e um pouco manipuladora, ela está sempre envolvida nas confusões da vila — principalmente com o Chaves e o Kiko.
+    </p>
+
+    <p>
+      Apesar de suas armações, Chiquinha demonstra ser uma menina carinhosa e esperta, que ama muito o pai.
+      Sua risada característica e suas lágrimas fingidas se tornaram marca registrada da personagem.
+    </p>
+
+    <h2>Frases famosas da Chiquinha:</h2>
+    <ul>
+      <li>“Pois é, pois é, pois é!”</li>
+      <li>“Não te dou outra porque...”</li>
+      <li>“Ai, que burro, dá zero pra ele!”</li>
+    </ul>
+
+    <button onclick="window.location.href='index.html'">Voltar para o site do Chaves</button>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
