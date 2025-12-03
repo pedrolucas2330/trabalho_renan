@@ -1,0 +1,13 @@
+function fraseChaves() {
+  const frases = [
+    "Foi sem querer querendo!",
+    "Ninguém tem paciência comigo...",
+    "Isso, isso, isso!",
+    "Eu prefiro evitar a fadiga.",
+    "Tá bom, mas não se irrite!",
+    "Que que foi, que que foi, que que há?"
+  ];
+
+  const aleatoria = frases[Math.floor(Math.random() * frases.length)];
+  document.getElementById("resultado").textContent = aleatoria;
+}
